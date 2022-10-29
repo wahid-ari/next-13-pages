@@ -3,7 +3,7 @@ const nextConfig = {
   env: {
     REPO_URL: "https://github.com/wahid-ari/next-13-pages",
     // API_URL: "http://localhost:3000",
-    API_URL: "https://next-13-pages.vercel.app/",
+    API_URL: "https://next-13-pages.vercel.app",
   },
   reactStrictMode: true,
   images: {
