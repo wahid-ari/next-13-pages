@@ -24,6 +24,9 @@ export default function Navbar() {
         <Link href="/link" className="text-sky-500 hover:text-sky-600 transition-all text-sm font-medium">
           next/link
         </Link>
+        <Link href="/nextfonts" className="text-sky-500 hover:text-sky-600 transition-all text-sm font-medium">
+          next/fonts
+        </Link>
         <Link href="/fonts" className="text-sky-500 hover:text-sky-600 transition-all text-sm font-medium">
           Fonts
         </Link>
