@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Navbar from '@components/Navbar';
 import Code from '@components/Code';
-import { Inter, Playfair_Display, Raleway, Roboto } from '@next/font/google';
+import { Inter, Playfair_Display, Raleway, Roboto } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], display: 'swap' })
 const playfair = Playfair_Display({ subsets: ['latin'] })
 const raleway = Raleway({ subsets: ['latin'] })
 const roboto = Roboto({ subsets: ['latin'], weight: '400' })
@@ -60,10 +60,8 @@ export default function Home() {
             </div>
           </div>
 
-          <Code name="CMD" className="mb-4" code={`yarn add @next/font`} />
-
-          <p className="dark:text-white pb-2">To use the font in all your pages, add it to _app.js file under /pages as shown below:</p>
-          <Code name="pages/_app" className="mb-4" code={`import { Inter, Roboto } from '@next/font/google'
+          <p className="dark:text-white mt-4">To use the font in all your pages, add it to _app.js file under /pages as shown below:</p>
+          <Code name="pages/_app" className="mb-4" code={`import { Inter, Roboto } from 'next/font/google'
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter()
@@ -83,9 +81,9 @@ export default function MyApp({ Component, pageProps }) {
   )
 }`} />
 
-          <Code name="pages/nextfonts" className="mb-4" code={`import { Inter, Playfair_Display, Raleway, Roboto } from '@next/font/google';
+          <Code name="pages/nextfonts" className="mb-4" code={`import { Inter, Playfair_Display, Raleway, Roboto } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin', display: 'swap'] })
 const playfair = Playfair_Display({ subsets: ['latin'] })
 const raleway = Raleway({ subsets: ['latin'] })
 const roboto = Roboto({ subsets: ['latin'], weight: '400' })

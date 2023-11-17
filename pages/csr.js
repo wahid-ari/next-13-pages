@@ -45,7 +45,7 @@ export default function CSR() {
               posts.map(item => {
                 return (
                   <div key={item.id} className="p-4 rounded-md border dark:border-neutral-800 mb-3">
-                    <Link href={`${process.env.API_URL}/csr/${item.id}`} className={`${linkClassName} text-lg font-semibold`}>{item.title}</Link>
+                    <Link href={`/csr/${item.id}`} className={`${linkClassName} text-lg font-semibold`}>{item.title}</Link>
                     <p className="dark:text-gray-300 text-neutral-600 mt-1 text-sm">{item.body}</p>
                   </div>
                 )
